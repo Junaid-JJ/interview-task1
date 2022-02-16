@@ -1,0 +1,53 @@
+.container{
+    background-color: rgb(37, 35, 35);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+.div-left{
+    /* background-color: red; */
+    /* flex */
+    float: left !important;
+    margin-left: -150px;
+}
+
+.email-sec{
+    display: grid;
+    
+}
+.email-sec input{
+    background-color: rgb(37, 35, 35) ;
+    border: 1px solid rgb(124, 118, 118);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+}
+.email-sec button{
+    width: 100%;
+    border: none;
+    background-color: rgb(62, 100, 224);
+    color: white;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.email-sec input::placeholder{
+    color: white;
+}
+.div-right{
+    /* background-color: purple; */
+}
+.brows-cat{
+    /* background-color: aqua; */
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+h6{
+    /* padding: 10px; */
+    padding-right:10px ;
+    color: rgb(173, 163, 163);
+}

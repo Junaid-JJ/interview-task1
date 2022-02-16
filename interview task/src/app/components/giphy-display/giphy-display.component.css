@@ -1,0 +1,22 @@
+.form-group{
+    display: flex;
+}
+
+.form-group button{
+    border: none;
+}
+
+.form-group input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+.form-group button:hover{
+    background-color: #fff;
+}

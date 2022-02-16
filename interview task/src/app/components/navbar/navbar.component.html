@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="./navbar.component.css"> -->
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <h1 style="text-align: center;padding-top: 25px;color: white;">Gif Search</h1>
+        <!-- <input type="text" style="height: 50px;width: 80%;margin-top: -50px;"> -->
+
+
+
+        <!--  -->
+        <div class="container">
+            <ng-progress></ng-progress>
+            <form style="margin-top: 50px">
+                <div class="form-group">
+                    <input type="text" class="form-control" [(ngModel)]="searchQuery" placeholder="What are you looking for?"
+                        style="margin-bottom: 10px; margin-top: 10px;" name="search" id="search">
+                    <button class="btn btn-outline-dark" (click)="searchGifs()"><i class="fas fa-search"
+                            style="color: #000"></i></button>
+                </div>
+            </form>
+            <div class="card-columns">
+                <div *ngFor="let gif of gifs; index as i">
+                    <div class="card" style="border: none;">
+                        <a href="gif.url" target="_blank"><img src="{{gif.images.preview_webp.url}}" alt="" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <h3 style="color: white;text-align: center;">You can search any gif with our search</h3>
+        <h4 style="color: white;margin-top: -100px;">Everything you need for your creative projects. websites, banners, presentations, magazines and advertising.</h4>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
+
+
